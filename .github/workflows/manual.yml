@@ -1,0 +1,14 @@
+name: manual
+on:
+  workflow_dispatch:
+    
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out code
+        uses: actions/checkout@v4
+      - name: run something ...
+        run: |
+          echo "HEllo from GITHUB"
